@@ -1,0 +1,56 @@
+/*
+  Styles for the main App container. Centers text by default.
+*/
+.App {
+  text-align: center;
+}
+
+/*
+  Styles for the App logo image. Sets its size and disables pointer events.
+*/
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/*
+  Animation for the App logo when motion is allowed by user preferences.
+*/
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/*
+  Styles for the App header. Sets background, layout, and text color.
+*/
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/*
+  Styles for links in the App. Sets a custom color.
+*/
+.App-link {
+  color: #61dafb;
+}
+
+/*
+  Keyframes for spinning the App logo.
+*/
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

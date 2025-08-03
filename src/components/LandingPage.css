@@ -1,0 +1,137 @@
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: repeat;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  position: relative;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 2px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.leaderboard-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #4caf50;
+  color: white;
+  border: 2px solid #45a049;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.leaderboard-button:hover {
+  background-color: #45a049;
+  border-color: #3d8b40;
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.play-button {
+  padding: 25px 50px;
+  font-size: 2.25rem;
+  font-weight: bold;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  min-width: 180px;
+}
+
+.play-button:hover {
+  background-color: #01579b;
+  transform: scale(1.05);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.how-to-play-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #666;
+  color: white;
+  border: 2px solid #555;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.how-to-play-button:hover {
+  background-color: #555;
+  border-color: #444;
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the login button container to position it in the upper right corner */
+.login-button-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* Updated login button: gray background, white text, sharper (but still rounded) edges */
+.login-button {
+  padding: 6px 16px;
+  font-size: 0.95rem;
+  border-radius: 6px; /* Sharper but still rounded */
+  border: none;
+  background: #555;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-button:hover {
+  background: #333;
+}
+
+/* Overlay for How to Play modal (for future mobile optimization, consider responsive sizing) */
+.how-to-play-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  transition: opacity 0.2s;
+} 
